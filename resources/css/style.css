@@ -1,6 +1,7 @@
 html {
   font-size: 16px;
   font-family: "Tenor Sans", sans-serif;
+  color: #313131;
 }
 
 body {
@@ -23,7 +24,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #313131;
 }
 
 a:hover {
@@ -44,7 +45,7 @@ a:hover {
   height: 2rem;
 }
 
-.logo span {
+.logo h3 {
   font-family: "Poiret One";
 }
 
@@ -89,7 +90,7 @@ a:hover {
 }
 
 .btn {
-  background-color: grey;
+  background-color: #0D0D0D;
   color: white;
   padding: 0.5rem 0;
   text-align: center;
@@ -99,71 +100,72 @@ a:hover {
 
 .btn:hover {
   background-color: white;
-  color: dimgray;
+  color: #313131;
+  transition: all 0.2s ease-out;
 }
 
-/*hurt-banner*/
-.hurt-banner {
+/*hurt-banner and thesis-banner*/
+.hurt-thesis-banner-content {
   display: flex;
 }
 
-.hurt-banner-left {
+.hurt-thesis-banner img {
+  width: 100%;
+}
+
+.hurt-thesis-banner h1 {
+  margin-bottom: 1.5rem;
+}
+
+.hurt-thesis-banner span {
+  margin-bottom: 2rem;
+}
+
+.banner-left {
   width: 60%;
   padding: 2rem 1.5rem;
   overflow: hidden;
 }
 
-.hurt-banner img {
-  width: 100%;
-}
-
-.hurt-banner h1 {
-  margin-bottom: 1.5rem;
-}
-
-.hurt-banner span {
-  margin-bottom: 2rem;
-}
-
-.hurt-banner-right {
+.banner-right {
   width: 40%;
   margin: 2rem 0;
 }
 
-.hurt-banner-right-item {
+.banner-right-item {
   width: 100%;
   display: flex;
 }
 
-.hurt-banner-right-item:hover {
+.banner-right-item:hover {
   background-color: lightgray;
 }
 
-.hurt-banner-right-img {
+.banner-right-img {
   width: 35%;
   margin: 1rem;
 }
 
-.hurt-banner-right img {
+.banner-right img {
   width: 100%;
 }
 
-.hurt-banner-right-txt {
+.banner-right-txt {
   display: flex;
   flex-direction: column;
   width: 65%;
   justify-content: center;
 }
 
-.hurt-banner-right-txt p {
+.banner-right-txt p {
   margin: 0.5rem 0;
 }
 
-.hurt-banner-right-txt a {
+.banner-right-txt a {
   color: darkcyan;
 }
 
-.hurt-banner-right-txt a:hover {
+.banner-right-txt a:hover {
   color: cornflowerblue;
 }
 
@@ -201,38 +203,35 @@ a:hover {
   padding: 1rem 0 1.5rem 1rem;
 }
 
+/*hurt banner*/
+.banner-left h1 {
+  padding-top: 2rem;
+}
+
 /*thesis-banner*/
-
-.thesis-banner {
-  margin-bottom: 2rem;
-  border: 1px solid red;
-}
-
-.thesis {
-  display: flex;
-}
-
-.thesis-banner h1 {
+#thesis-title {
   display: block;
   text-align: center;
   margin: 2rem 0;
 }
 
-.thesis-banner-left {
-  width: 60%;
-  margin: 1.5rem;
+.video {
+  margin-bottom: 1.5rem;
 }
 
-.thesis-banner video {
+.hurt-thesis-banner-content video {
   width: 100%;
-  margin: 1.5rem;
+}
+
+.video-txt p {
+  margin-right: 2rem;
 }
 
 /*footer*/
-
 .footer {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid lightgray;
   padding: 1rem 1.5rem;
+  height: 4rem;
 }
