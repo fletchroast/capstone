@@ -1,14 +1,33 @@
 html {
   font-size: 16px;
-  font-family: Helvetica, sans-serif;
+  font-family: "Tenor Sans", sans-serif;
+}
+
+body {
+  line-height: 1.5rem;
 }
 
 h1 {
   font-size: 2.75rem;
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 1em;
 }
 
 h2 {
   font-size: 1.75rem;
+  font-family: "Raleway";
+  font-weight: bold;
+  color: dimgray;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: dimgrey;
 }
 
 /*header*/
@@ -23,6 +42,10 @@ h2 {
   display: flex;
   align-items: center;
   height: 2rem;
+}
+
+.logo span {
+  font-family: "Poiret One";
 }
 
 #colmar {
@@ -52,7 +75,6 @@ h2 {
 .learn-banner-img {
   width: 60%;
   padding: 2rem 1.5rem;
-  overflow: hidden;
 }
 
 .learn-banner img {
@@ -60,6 +82,7 @@ h2 {
 }
 
 .learn-banner-txt {
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,12 +97,17 @@ h2 {
   font-size: 1.25rem;
 }
 
+.btn:hover {
+  background-color: white;
+  color: dimgray;
+}
+
 /*hurt-banner*/
 .hurt-banner {
   display: flex;
 }
 
-.hurt-banner-img {
+.hurt-banner-left {
   width: 60%;
   padding: 2rem 1.5rem;
   overflow: hidden;
@@ -99,27 +127,56 @@ h2 {
 
 .hurt-banner-right {
   width: 40%;
+  margin: 2rem 0;
+}
+
+.hurt-banner-right-item {
+  width: 100%;
+  display: flex;
+}
+
+.hurt-banner-right-item:hover {
+  background-color: lightgray;
 }
 
 .hurt-banner-right-img {
   width: 35%;
-  height: auto;
+  margin: 1rem;
 }
 
-.hurt-banner-right-section {
+.hurt-banner-right img {
+  width: 100%;
+}
+
+.hurt-banner-right-txt {
   display: flex;
+  flex-direction: column;
+  width: 65%;
+  justify-content: center;
+}
+
+.hurt-banner-right-txt p {
+  margin: 0.5rem 0;
+}
+
+.hurt-banner-right-txt a {
+  color: darkcyan;
+}
+
+.hurt-banner-right-txt a:hover {
+  color: cornflowerblue;
 }
 
 /*start-banner*/
-
 .start-banner {
-  border: 1px solid red;
   background-color: lightgray;
 }
+
 .start-banner h1 {
   display: block;
   text-align: center;
   margin: 2rem 0;
+  padding-top: 2rem;
 }
 
 .course-grid {
@@ -131,17 +188,24 @@ h2 {
 }
 
 .course-box {
-  border: 1px solid green;
   width: 30%;
   overflow: hidden;
   margin: 2rem 1rem;
   background-color: white;
 }
 
+.course-box img {
+  width: 100%;
+}
+.course-txt {
+  padding: 1rem 0 1.5rem 1rem;
+}
+
 /*thesis-banner*/
 
 .thesis-banner {
   margin-bottom: 2rem;
+  border: 1px solid red;
 }
 
 .thesis {
