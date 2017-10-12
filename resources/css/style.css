@@ -241,6 +241,55 @@ a:hover {
   height: 4rem;
 }
 
+/*--------------------media-query-tablet--------------------*/
+@media only screen and (max-width: 800px) {
+
+  #colmar {
+    font-size: 1rem;
+  }
+
+  .hurt-banner-right-txt h2, .thesis-banner-right-txt h2 {
+    font-size: 1.25rem;
+  }
+
+  .hurt-banner-right-txt p, .hurt-banner-right-txt span, .thesis-banner-right-txt p,
+  .thesis-banner-right-txt span, .course-box p {
+    font-size: 0.8rem;
+  }
+
+  .hide-mobile, .footer span {
+    font-size: 0.9rem;
+  }
+
+  .course-box {
+    width: 200px;
+  }
+
+  .course-box h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+
+  .header h3 {
+    font-size: 0.7rem;
+  }
+
+  #colmar {
+    font-size: 0.7rem;
+  }
+
+  .hide-mobile {
+    font-size: 0.7rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+
 /*--------------------media-query-mobile--------------------*/
 @media only screen and (max-width: 480px) {
 
