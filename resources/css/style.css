@@ -8,18 +8,18 @@ body {
   line-height: 1.5rem;
 }
 
+h1, h2 {
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-weight: bold;
+}
+
 h1 {
   font-size: 2.75rem;
-  font-family: "Raleway", Helvetica, sans-serif;
-  font-weight: bold;
   line-height: 1em;
 }
 
 h2 {
   font-size: 1.75rem;
-  font-family: "Raleway";
-  font-weight: bold;
-  color: dimgray;
 }
 
 a {
@@ -31,7 +31,11 @@ a:hover {
   color: dimgrey;
 }
 
-/*header*/
+.mobile  {
+  display: none;
+}
+
+/*--------------------header--------------------*/
 .header {
   display: flex;
   justify-content: space-between;
@@ -67,7 +71,7 @@ a:hover {
   margin-left: 1rem;
 }
 
-/*learn-banner*/
+/*--------------------learn-banner--------------------*/
 .learn-banner {
   background-color: lightgray;
   display: flex;
@@ -104,72 +108,77 @@ a:hover {
   transition: all 0.2s ease-out;
 }
 
-/*hurt-banner and thesis-banner*/
-.hurt-thesis-banner-content {
+/*--------------------hurt-banner--------------------*/
+.hurt-banner-left h1 {
+  padding-top: 2rem;
+}
+
+/*--------------------hurt+thesis-banners--------------------*/
+.hurt-banner, .thesis-banner-content {
   display: flex;
 }
 
-.hurt-thesis-banner img {
+.hurt-banner img, .thesis-banner img {
   width: 100%;
 }
 
-.hurt-thesis-banner h1 {
+.hurt-banner h1, .thesis-banner h1 {
   margin-bottom: 1.5rem;
 }
 
-.hurt-thesis-banner span {
+.hurt-banner span, .thesis-banner span {
   margin-bottom: 2rem;
 }
 
-.banner-left {
+.hurt-banner-left, .thesis-banner-left {
   width: 60%;
   padding: 2rem 1.5rem;
   overflow: hidden;
 }
 
-.banner-right {
+.hurt-banner-right, .thesis-banner-right {
   width: 40%;
   margin: 2rem 0;
 }
 
-.banner-right-item {
+.hurt-banner-right-item, .thesis-banner-right-item {
   width: 100%;
   display: flex;
 }
 
-.banner-right-item:hover {
+.hurt-banner-right-item:hover, .thesis-banner-right-item:hover {
   background-color: lightgray;
 }
 
-.banner-right-img {
+.hurt-banner-right-img, .thesis-banner-right-img {
   width: 35%;
   margin: 1rem;
 }
 
-.banner-right img {
+.hurt-banner-right img, .thesis-banner-right img {
   width: 100%;
 }
 
-.banner-right-txt {
+.hurt-banner-right-txt, .thesis-banner-right-txt {
   display: flex;
   flex-direction: column;
   width: 65%;
   justify-content: center;
 }
 
-.banner-right-txt p {
+.hurt-banner-right-txt p, .thesis-banner-right-txt p  {
   margin: 0.5rem 0;
 }
 
-.banner-right-txt a {
+.hurt-banner-right-txt a, .thesis-banner-right-txt a {
   color: darkcyan;
 }
 
-.banner-right-txt a:hover {
+.hurt-banner-right-txt a:hover, .thesis-banner-right-txt a:hover {
   color: cornflowerblue;
 }
 
-/*start-banner*/
+/*--------------------start-banner--------------------*/
 .start-banner {
   background-color: lightgray;
 }
@@ -185,12 +194,12 @@ a:hover {
   display: flex;
   margin: 2rem 2.5rem;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-content: space-between;
 }
 
 .course-box {
-  width: 30%;
+  width: 350px;
   overflow: hidden;
   margin: 2rem 1rem;
   background-color: white;
@@ -199,16 +208,12 @@ a:hover {
 .course-box img {
   width: 100%;
 }
+
 .course-txt {
   padding: 1rem 0 1.5rem 1rem;
 }
 
-/*hurt banner*/
-.banner-left h1 {
-  padding-top: 2rem;
-}
-
-/*thesis-banner*/
+/*--------------------thesis-banner--------------------*/
 #thesis-title {
   display: block;
   text-align: center;
@@ -219,7 +224,7 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
-.hurt-thesis-banner-content video {
+.thesis-banner-content video {
   width: 100%;
 }
 
@@ -227,11 +232,155 @@ a:hover {
   margin-right: 2rem;
 }
 
-/*footer*/
+/*--------------------footer--------------------*/
 .footer {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid lightgray;
   padding: 1rem 1.5rem;
   height: 4rem;
+}
+
+/*--------------------media-query-mobile--------------------*/
+@media only screen and (max-width: 480px) {
+
+  .hide-mobile, .thesis-banner-right, .hurt-banner-left, .start-banner, .video-txt {
+    display: none;
+  }
+
+  .mobile {
+    display: inline;
+  }
+
+  /*--------------------header-mobile--------------------*/
+  .logo {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  /*--------------------learn-banner-mobile--------------------*/
+  .learn-banner {
+    flex-direction: column;
+  }
+
+  .learn-banner-img {
+      padding: 0;
+  }
+
+  .learn-banner-txt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .learn-banner-txt h1, .learn-banner-txt h2  {
+    padding: 0 1rem;
+  }
+
+  .learn-banner img, .learn-banner-img, .logo {
+    width: 100%;
+  }
+
+  .btn {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 90%;
+  }
+
+/*--------------------hurt-banner-mobile--------------------*/
+  .hurt-banner-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hurt-banner-right-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .hurt-banner-right-item:hover {
+    background-color: lightgray;
+  }
+
+  .hurt-banner-right-img {
+    width: 90%;
+    margin: 1rem;
+  }
+
+  .hurt-banner-right img {
+    width: 100%;
+  }
+
+  .hurt-banner-right-txt {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+  }
+
+  .hurt-banner-right-txt p {
+    margin: 0.5rem 0;
+  }
+
+  .hurt-banner-right-txt a {
+    color: darkcyan;
+  }
+
+  .hurt-banner-right-txt a:hover {
+    color: cornflowerblue;
+  }
+
+/*--------------------start-banner-mobile--------------------*/
+  .start-banner-mobile h1 {
+    display: block;
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .start-banner-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem 1.5rem;
+  }
+
+  .course-box {
+    background-color: lightgrey;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .course-box h2 {
+    margin: 1rem 1rem 1.5rem 1rem;
+  }
+
+/*--------------------thesis-banner-mobile--------------------*/
+  .thesis-banner-left {
+    width: 100%;
+    padding: 2rem 0;
+    overflow: hidden;
+  }
+
+  #thesis-title {
+    margin: 2rem 0 1rem 0;
+  }
+
+  /*--------------------footer-mobile--------------------*/
+  .footer {
+    border-top: none;
+  }
+
+  .terms-privacy {
+    display: none;
+  }
 }
